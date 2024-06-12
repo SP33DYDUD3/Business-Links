@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, lightblue, darkblue);
+}
+
+#MainImg img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.Img1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#p1 {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#p2 {
+    color: lightgray;
+    margin-top: -10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* ---------------------------------------------------------- */
+
+.Link1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Link2{
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-button {
+    background-color: transparent;
+    color: white;
+    padding: 20px 25px;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50px;
+    width: 90%;
+}
+
+.menu-content {
+    display: none;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    width: 80%;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.menu-content a {
+    color: white;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: block;
+    border: 2px solid white;
+    font-size: 17px;
+    border-radius: 50px;
+    margin: 2px;
+}
+
+.menu-content a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.show {
+    display: inline-block;
+    max-height: 500px; /* Adjust as needed */
+    transition: max-height 0.3s ease-in;
+}
